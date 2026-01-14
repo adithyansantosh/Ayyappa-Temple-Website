@@ -83,9 +83,29 @@
     </div>
 
     <div class="footer-item">
-      <h4>Donations</h4>
-      <a href="upi://pay?pa=adithyansantosh1027@okaxis&pn=Lord%20Ayyappa%20Temple&cu=INR&mode=02" class="donate-btn">🙏 Donate Now</a>
-      <p class="note">All donations are used for temple activities</p>
+      <div class="donate-modal" id="donateModal" onclick="closeDonateModal()">
+  <div class="donate-box" onclick="event.stopPropagation()">
+    <h3>🙏 Donate via UPI</h3>
+
+    <img 
+      src="assets/upi-qr.png" 
+      alt="UPI QR Code"
+      class="upi-qr"
+    />
+
+    <p class="upi-text">
+      adithyansantosh1027@okaxis
+    </p>
+
+    <a 
+      href="upi://pay?pa=adithyansantosh1027@okaxis&pn=Lord%20Ayyappa%20Temple&cu=INR"
+      class="upi-link">
+      Open UPI App
+    </a>
+
+    <button class="close-btn" onclick="closeDonateModal()">Close</button>
+  </div>
+</div>
     </div>
 
   </div>
@@ -101,5 +121,6 @@
 
 </body>
 </html>
+
 
 
